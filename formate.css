@@ -1,20 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Oxygen|Roboto"); /* Google Fonts */
 
-p { font-size: 1.5em; text-align: justify; font-family: 'Roboto', sans-serif; }
+
 h1 { font-size: 2.2em; font-family:'Oxygen', sans-serif; text-align: center; }
 h2 { font-size: 2.2em; font-family: 'Oxygen', sans-serif;  text-align: center; }
 li { font-size: 1.5em; font-family: 'Oxygen', sans-serif }
-li li { font-size: 1em; font-family: 'Oxygen' sans-serif}
-th {font-size: 1.5em; text-align: justify; font-family: 'Oxygen', sans-serif;}
-td{font-size: 1.5em; text-align: justify; font-family: 'Oxygen', sans-serif;}
-table{font-size: 100%; text-align: justify; font-family: 'Oxygen', sans-serif;}
+li li { font-size: 1em; font-family: 'Oxygen', sans-serif}
+
 /*Schriftart, Größe, Hintergrudfarbe, Textausrichtung*/
 
 
 
 #leistungen {
   
-  border: 3px solid black;
+  border: 3px solid white;
 
   padding: 7px 7px 7px 7px;
 }
@@ -24,20 +22,41 @@ div#leistungen p {
   text-align: right;
 }
 body {
-  width: 1000px;
+  width: 1100px;
   margin: 0 auto;
-  background-color:  #ffffff;
+  background-color:  gainsboro;
   padding: 0 20px 20px 20px;
   border-top:0 solid white;
-  border-left: 3px solid black;
-  border-right: 3px solid black;
-  border-bottom: 3px solid black;
+  border-left: 0 solid black;
+  border-right: 0 solid black;
+  border-bottom: 0 solid white;
+  
 }
 
+#logo {
+  font-size: 1.7em;
+  text-align: left;
+  color: white;
+  background-color: black;
+  padding: 5px 5px 5px 5px;
+  border-bottom: 1px solid black;
+  border-left: 0 solid white;
+  border-right: 0 solid white;
+  border-top: 0 solid white;
+ 
+}
 
+#logo li {
+  text-align: right;
+  border: 1px solid black;
+  display: inline-block; /* li nebeneinander anzeigen */
+  text-decoration: none;
+  list-style-type: none; /* ohne Aufzählungspunkte */
+  margin: 0 5px 0 0; /* rechts 10px, sonst 0*/
+}
 #navibereich {
   
-  text-align: middle; 
+  text-align: left; 
   color: white;
   background:  black;
   padding: 5px 5px 5px 5px;
@@ -48,7 +67,42 @@ body {
  
 }
   #navibereich li {
-    border: 1px solid white;
+    text-align: left;
+    border: 1px solid black;
+    display: inline-block; /* li nebeneinander anzeigen */
+    text-decoration: none;
+    list-style-type: none; /* ohne Aufzählungspunkte */
+    margin: 0 5px 0 0; /* rechts 10px, sonst 0*/
+  }
+
+
+#fussbereich {
+  background-color: lightgrey;
+  
+}
+#fussbereich li {
+  font-size: 1em;
+  border: 1px solid white;
+  display: inline-block; /* li nebeneinander anzeigen */
+  text-decoration: none;
+  list-style-type: none; /* ohne Aufzählungspunkte */
+  margin: 0 5px 0 0; /* rechts 10px, sonst 0*/
+}
+#login {
+  
+  text-align: right; 
+  color: white;
+  background:  black;
+  padding: 5px 5px 5px 5px;
+  border-bottom: 1px solid black;
+  border-left: 0 solid white;
+  border-right: 0 solid white;
+  border-top: 0 solid white;
+ 
+}
+  #login li {
+    text-align: right;
+    border: 1px solid black;
     display: inline-block; /* li nebeneinander anzeigen */
     text-decoration: none;
     list-style-type: none; /* ohne Aufzählungspunkte */
@@ -57,9 +111,32 @@ body {
 
 
 h1 {
-  margin: 0;
-  padding: 20px 0;    
+     
   color: black;
+  border: 1px solid;
+  margin: 0;
+  padding: 0;
+}
+p {
+  width: 100px;         /* inner boxes*/
+  color: black;
+  background-color: lightyellow;
+  border:  2px solid grey;
+  border-radius: 0 1em 1em 1em;
+  margin:  20px auto;
+  padding: 2em;
+}
+
+article {
+	border: 1px solid;
+	display: flex;
+}
+
+section,
+aside {
+	border: 1px solid white;  /*outer boxes */ 
+	padding: 5px;
+	flex: 1;
 }
 
 img {
@@ -73,18 +150,24 @@ a {
   text-decoration: none;
   outline: none;
 }
-a:link { color: black; }
-a:visited { color: black; }
 
+a:link { color: #d90000; }
+a:visited { color: grey; }
 
-a:hover,
-a:focus {
-  border-bottom: 1px solid rgba(14, 171, 177, 0.747);
+a:hover
+ {
+  border-bottom: 1px solid #d90000;
 }
+a:focus{border-bottom: 1px solid white}
 a:active {
-  color: rgb(0, 89, 255);
-  background-color: rgba(14, 171, 177, 0.747);
+  color: white;
+  
 }
+
+
+
+
+
 
 
 
