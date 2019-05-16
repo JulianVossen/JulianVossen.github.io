@@ -7,9 +7,11 @@ li { font-size: 1.5em; font-family: 'Oxygen', sans-serif }
 li li { font-size: 1em; font-family: 'Oxygen', sans-serif}
 
 /*Schriftart, Größe, Hintergrudfarbe, Textausrichtung*/
-
+@media (width: 60em) { /* Breite entspricht genau 60em */ }
+@media (min-width: 50em) { /* Breite beträgt mindestens 50em */ }
+@media (max-width: 70em) { /* Breite beträgt höchstens 70em */ }
 body {
-  width: 1100px;
+  
   margin: 0 auto;
   background-color:  gainsboro;
   padding: 0 20px 20px 20px;
