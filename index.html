@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
  <head>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="Users\User\Documents\Uni\GPBA/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Tutorenvermittlung24</title>
@@ -18,15 +18,24 @@
               <li><a href="html/login.html">Login</a></li> 
         </ul>
     </div>
+
    <div id ="logo">
      <ul>
         <li><a tabindex="0" aria-current="page">Tutorenvermittlung24</a></li>
      </ul>
    </div>
+   
    <div id ="navibereich">
-      <ul>
-        <li><a tabindex="0" aria-current="page">Tutorenvermittlung24</a></li>
-        <li><a href="html/preise.html">Fächer</a></li>
+      
+        <div class="dropdown">
+            <button class="dropbtn">Fächer  &#9660;</button>
+            <div class="dropdown-content">
+              <a href="html/mathe.html">Mathe</a>
+              <a href="#">Deutsch</a>
+              <a href="#">Englisch</a>
+            </div>
+          </div>
+       </li>
     </div>
     
 <div>
@@ -34,7 +43,7 @@
     <main>
       <article>
         <section>
-            <a href="html/preise.html"><img src="Persona1.png" alt="Persona1"></a>
+            <a href="html/lars.html"><img src="Persona1.png" alt="Persona1"></a>
           
              
           <p>Lars Schmidt</p>
@@ -55,10 +64,16 @@
           </section>
        
         <section>
+            <a href="html/preise.html"><img src="Persona5.png" alt="Persona1"></a>
+            <p>Tim Franke</p>
+            <p>Physik, Chemie</p>
+        </section>
+        <section>
             <a href="html/preise.html"><img src="Persona1.png" alt="Persona1"></a>
             <p>Tim Franke</p>
             <p>Physik, Chemie</p>
         </section>
+
 
       </article>
     </main>

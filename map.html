@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="de">
-  <link rel="stylesheet" href="formate.css">
+  <link rel="stylesheet" href="../formate.css">
   <style type="text/css">
     html {                                          
     overflow-y: scroll;
@@ -8,16 +8,29 @@
     </style>
   </head>
   <body>
-    <div id="navibereich">
-      <ul>
-        <li><a href="index.html">Startseite</a></li>
-        <li><a href="preise.html">Unsere Preise</a></li>
-        <li><a tabindex="0" aria-current="page">Unsere Tutoren</a></li>
+      <div id ="login">
+          <ul>
+                <li><a href="login.html">Login</a></li> 
+          </ul>
+        </div>
+     <div id ="logo">
+       <ul>
+          <li><a href="../index.html">Tutorenvermittlung24</a></li>
+       </ul>
+     </div>
+     <div id ="navibereich">
         
-        
-      </ul>
-    </div>
-    <h1> Map</h1>
+          <div class="dropdown">
+              <button class="dropbtn">Fächer  &#9660;</button>
+              <div class="dropdown-content">
+                <a href="#">Mathe</a>
+                <a href="#">Deutsch</a>
+                <a href="#">Englisch</a>
+              </div>
+            </div>
+         </li>
+      </div>
+    <h2> Map</h2>
         <head>
                 <title>OpenLayers Demo</title>
                 <style type="text/css">
@@ -45,16 +58,10 @@
               <body onload="init();">
                 <div id="basicMap"></div>
               </body>
-          
-    
               <div id="fussbereich">
-  
-                <li><a href="html/kontakt.html">Kontakt</a></li>
-                <li><a href="html/impressum.html">Impressum</a></li>
-                <li><a tabindex="0" aria-current="page">Unsere Tutoren</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+                <li><a tabindex="0" aria-current="page">Map</a></li>
               
               </div>
-
-
-  
 </html>

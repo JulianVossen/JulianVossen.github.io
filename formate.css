@@ -8,19 +8,6 @@ li li { font-size: 1em; font-family: 'Oxygen', sans-serif}
 
 /*Schriftart, Größe, Hintergrudfarbe, Textausrichtung*/
 
-
-
-#leistungen {
-  
-  border: 3px solid white;
-
-  padding: 7px 7px 7px 7px;
-}
-
-div#leistungen p {
-  font-family: 'Oxygen',sans-serif;
-  text-align: right;
-}
 body {
   width: 1100px;
   margin: 0 auto;
@@ -30,6 +17,8 @@ body {
   border-left: 0 solid black;
   border-right: 0 solid black;
   border-bottom: 0 solid white;
+  align-items: center;
+  flex-wrap: wrap;
   
 }
 
@@ -54,6 +43,7 @@ body {
   list-style-type: none; /* ohne Aufzählungspunkte */
   margin: 0 5px 0 0; /* rechts 10px, sonst 0*/
 }
+
 #navibereich {
   
   text-align: left; 
@@ -74,8 +64,47 @@ body {
     list-style-type: none; /* ohne Aufzählungspunkte */
     margin: 0 5px 0 0; /* rechts 10px, sonst 0*/
   }
+  /* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 18px;
+  font-size: 18px;
+  border: none;
+}
 
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 #fussbereich {
   background-color: lightgrey;
   
@@ -108,7 +137,12 @@ body {
     list-style-type: none; /* ohne Aufzählungspunkte */
     margin: 0 5px 0 0; /* rechts 10px, sonst 0*/
   }
-
+ 
+  #kontakt, #impressum, #fussbereich{
+    display: flex;
+    margin:auto;
+    justify-content: center;
+  }
 
 h1 {
      
@@ -118,25 +152,63 @@ h1 {
   padding: 0;
 }
 p {
+  font-family: 'Oxygen', sans-serif;
   width: 100px;         /* inner boxes*/
   color: black;
   background-color: lightyellow;
   border:  2px solid grey;
-  border-radius: 0 1em 1em 1em;
+  border-radius: 1em 1em 1em 1em;
   margin:  20px auto;
   padding: 2em;
 }
 
+sa {
+  text-align: left;
+  font-family: 'Oxygen', sans-serif;
+ width: 100%;
+ border-radius: 0 1em 1em 1em;
+  margin:  20px auto;
+  margin:  20px auto;
+  padding: 2em;
+}
+/* Das Kontaktformular */ 
+form {
+
+  text-align: center;
+  background-color: #eee;
+  width: 370px; /* Breite des Formulars */
+  padding: 20px;
+  border: 1px solid #8c8c8c;
+}
+label { /* Beschriftung auf eigener Zeile */
+  display: block;
+  cursor: pointer; /* Mauszeiger wird zur Hand */
+}
+input#absender,
+textarea {
+  width: 300px;
+  border: 1px solid #8c8c8c;
+  margin-bottom: 1em;
+}
+textarea {
+  height: 7em;
+}
+input:focus,
+textarea:focus {
+  background-color: #d9d9d9;
+}
 article {
 	border: 1px solid;
-	display: flex;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 section,
 aside {
 	border: 1px solid white;  /*outer boxes */ 
 	padding: 5px;
-	flex: 1;
+  flex: 1;
+  flex-wrap: wrap;
 }
 
 img {
@@ -151,12 +223,12 @@ a {
   outline: none;
 }
 
-a:link { color: #d90000; }
-a:visited { color: grey; }
+a:link { color: #4CAF50; }
+a:visited { color: #4CAF50; }
 
 a:hover
  {
-  border-bottom: 1px solid #d90000;
+  border-bottom: 1px solid #4CAF50;
 }
 a:focus{border-bottom: 1px solid white}
 a:active {
